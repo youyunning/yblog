@@ -1,0 +1,9 @@
+package com.yyn.mapper;
+
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.yyn.entity.Category;
+
+
+public interface CategoryMapper extends BaseMapper<Category> {
+
+}
