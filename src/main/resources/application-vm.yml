@@ -5,26 +5,26 @@ spring:
   datasource:
     #    driver-class-name: com.mysql.cj.jdbc.Driver
     driver-class-name: com.p6spy.engine.spy.P6SpyDriver
-    url: jdbc:p6spy:mysql:///eblog?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=UTC
+    url: jdbc:p6spy:mysql://150.109.122.225:3306/eblog?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=UTC
     username: root
-    password: 123456
+    password: Yyn1355701658
   freemarker:
     settings:
       classic_compatible: true
       datetime_format: yyyy-MM-dd HH:mm
       number_format: 0.##
   redis:
-    host:
+    host: 150.109.122.225
     port: 6379
     password:
   data:
     elasticsearch:
       cluster-name: kobe
-      cluster-nodes:
+      cluster-nodes: 150.109.122.225:9300
       repositories:
         enabled: true
   rabbitmq:
     username: root
     password: admin
-    host:
+    host: 150.109.122.225
     port: 5672

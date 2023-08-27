@@ -7,7 +7,10 @@ import org.springframework.amqp.rabbit.annotation.RabbitHandler;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
+/**
+ * 监听异步消息队列
+ * 更新搜索内容
+ */
 @Slf4j
 @Component
 @RabbitListener(queues = RabbitConfig.es_queue)
